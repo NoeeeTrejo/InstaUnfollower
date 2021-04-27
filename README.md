@@ -11,7 +11,7 @@ I made an Instagram bot using Selenium!
 ## Selenium: 
 
 "Selenium Webdriver is an open-source collection of APIs which is used for testing web applications. The Selenium Webdriver tool is used for automating web application testing to verify that it works as expected or not. It mainly supports browsers like Firefox, Chrome, Safari and Internet Explorer. It also permits you to execute cross-browser testing."
-![Selenium](https://selenium-python.readthedocs.io/)
+[Selenium](https://selenium-python.readthedocs.io/)
 
 While I didn't use Selenium to automate tests, I managed to make something else about it and learned a new awesome Library! 
 I made a class for the bot and gave it a few functions, but just what I needed.
@@ -21,7 +21,7 @@ I made a class for the bot and gave it a few functions, but just what I needed.
 
 You can send the Shrek Script!!!
 
-[Sending Shrek Script](SendingShrek.gif)
+![Sending Shrek Script](SendingShrek.gif)
 
 
 
