@@ -114,7 +114,7 @@ def main():
             sleep(0.8)
         button = myBot.driver.find_element_by_xpath('/html/body/div[5]/div/div/div[1]/div/div[2]/button')
         button.click()
-        sleep(5)
+        sleep(0.8)
             
 
 
