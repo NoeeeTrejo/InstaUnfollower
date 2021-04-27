@@ -59,7 +59,7 @@ class Bot():
             self.unfollow_user(username)
     
     def messageUser(self, username, message):
-        self.search(username)
+        self.search_user(username)
         buttons = self.find_buttons("Message")
         if not buttons: 
             self.follow_user(username)
@@ -73,7 +73,7 @@ class Bot():
         self.driver.find_element_by_xpath("/html/body/div[1]/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button").click()  
 
     def messageFileToUser(self, fileName, username):
-        self.search(username)
+        self.search_user(username)
         buttons = self.find_buttons("Message")
         if not buttons: 
             self.follow_user(username)
@@ -87,34 +87,15 @@ class Bot():
             sleep(0.2)
             text_box.send_keys(line)
             
-    def profile_page(self):
-        self.driver.get("https://instagram.com/" + self.username)
+    def search_user(self, user):
+        self.driver.get("https://instagram.com/" + user)
 
 
 
 
 def main():
-    # This small script goes through followed users and unfollows users
     myBot = Bot("username", "password")
-    
-    for i in range(28):
-        myBot.profile_page()
-
-        #Goes to following
-        myBot.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/ul/li[3]/a/span").click()
-        sleep(1)
-        following_buttons = myBot.find_buttons('Following')
-        for button in following_buttons:
-            button.click()
-            sleep(0.8)
-            Unfollow_button = myBot.find_buttons('Unfollow')
-            for other_button in Unfollow_button:
-                other_button.click()
-                sleep(3)
-            sleep(0.8)
-        button = myBot.driver.find_element_by_xpath('/html/body/div[5]/div/div/div[1]/div/div[2]/button')
-        button.click()
-        sleep(0.8)
+    myBot.messageFileToUser("message.txt", "other_user")
             
 
 
