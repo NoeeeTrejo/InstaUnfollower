@@ -21,7 +21,7 @@ I made a class for the bot and gave it a few functions, but just what I needed.
 
 You can send the Shrek Script!!!
 
-![Sending Shrek Script](SendingShrek.gif)
+[Sending Shrek Script](SendingShrek.gif)
 
 
 
